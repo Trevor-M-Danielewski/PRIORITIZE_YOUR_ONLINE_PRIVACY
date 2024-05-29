@@ -1,0 +1,160 @@
+/* BODY STYLES */
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/*TEXT-BODY STYLES*/
+.text-body {
+    padding-top: 13em;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    width: 60%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    color: #212A31;
+}
+
+.text-body p {margin-bottom: 2em;}
+
+/* HEADER STYLES */
+.header-container {
+    position: fixed;
+    z-index: 2;
+    font-size: 2em;
+    width: 100%;
+    background-color: #c2c5c2;
+    margin: auto;
+    color: #428296;
+}
+
+.header-container img {
+    width: 100%;
+    height: 6em;
+}
+
+header {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 0.5em;
+    background-image: url("images/headerbanner.jpg"); /*This was so hard to find in the textbook*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0.5em;
+    align-content: center;
+    height: 7em;
+}
+
+header h1 {margin-left: 1em;}
+
+/* FOOTER STYLES */
+footer {
+    position: static;
+    margin-top: 10%;
+    bottom: 100%;
+    width: 100%;
+    background-color: #17254d;
+    font-family: Arial, sans-serif;
+    height: 7em;
+    color: #374652;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer footer nav {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+/* NAVIGATION & LINKS STYLES */
+nav ul {
+    list-style-type: none;
+    font-size: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    padding-right: 2em;
+    font-weight: bold;
+}
+
+nav ul ul li {
+    font-size: 1.5em;
+    display: block;
+    position: relative;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #2E3944;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    padding: 2em;
+    margin-left: 14em;
+    align-content: center;
+}
+nav ul ul li a:link, nav ul ul li a:visited { color: #e1e1e1; } /*massive line of code*/
+nav li { display: inline; }
+nav ul li a:hover, a:hover { color: #748D92; }
+nav li a:link, nav li a:visited, body a:visited { color: #428296; font-weight: bold; } /*massive line of code*/
+ul li { margin-bottom: 0.5em; }
+
+/*SIDE MENU*/
+
+#sideMenu {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 11em;
+    height: 100%;
+    width: 10em;
+    background-color: #889191;
+    padding: 1em;
+}
+
+#sideMenu a {
+    color: #D3D9D4;
+    text-decoration: none;
+}
+
+.footer {
+    z-index: 2;
+}
+
+#sideMenu ul {
+    list-style-type: none;
+    background-color: #889191;
+    margin: -1em; /*I HAD NO IDEA I COULD USE NEGATIVES, THAT'S AWESOME*/
+    padding: 0.5em;
+}
+
+#sideMenu ul li a {
+    border: 0.5em solid #2E3944;
+    background-color: #2E3944;
+    display: block;
+    width: 11em;
+    text-decoration: none;
+}
+
+#sideMenu ul li {
+    padding: 1em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#sideMenu ul li a:hover {
+    background-color: #2E3944;
+    padding: 1em;
+    color: white;
+}

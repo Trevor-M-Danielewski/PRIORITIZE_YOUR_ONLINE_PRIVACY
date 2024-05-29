@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Privacy</title>
+        <link rel="stylesheet" type="text/css" href="template.css">
+
+        <!--
+        Author: Trevor M Danielewski
+        Date: 5/19/2024
+        Section: 400
+        Class: Fundamentals of Web Technologies (ITEC 231)
+        Project: Term Project
+
+        Description:
+            This is my term project for ITEC 231. The project is to build a website that is focused on a specific topic.
+            However, we are required to select one of the three themes with our topic. The themes are:
+
+                1. Censorship
+                2. Copyright Laws
+                3. Internet Laws
+
+            I chose the topic of online privacy and the theme of internet laws. I find it extremely important for
+            everyone to understand the importance of online privacy, and not many people have the knowledge of
+            how their personal information is being used. This website is to help educate people on basic internet
+            laws that coincide with online privacy.
+
+            Especially for those who are not as tech-savvy, I am hoping that this website will help them understand
+            to some extent. But to also provide some resources for those who are willing to begin, or improve,
+            protecting their online privacy.
+
+            NOTE: Some stock images are used from iStock.com, and it is not required to provide citations
+            Source: https://www.istockphoto.com/legal/license-agreement (search for "Intellectual property rights")
+
+        -->
+
+        <script>
+            window.onload = function(){ <!--I needed to figure out a way to make the popup display when page is loaded-->
+                var cookieTest = document.getElementById("cookieTest");
+                cookieTest.style.display = "block";
+
+                document.getElementById("acceptAll").onclick = function(){
+                    alert("WRONG! Now I can gather a lot of sellable data off of your activity");
+                }
+                document.getElementById("rejectAll").onclick = function(){
+                    alert("CORRECT!");
+                    document.getElementById("cookieTest").style.display = "none";
+                }
+                document.getElementById("acceptNecessary").onclick = function() {
+                    alert("WRONG! Now I can gather a decent amount of sellable data off of your activity");
+                }
+            }
+        </script>
+
+        <style>
+            button {
+                background-color: #124E66;
+                border: none;
+                color: white;
+                padding: 1em 2em;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1em;
+                margin: 1em 1em;
+            }
+
+            #cookieTest {
+                display: none;
+                font-family: Arial, sans-serif;
+                color: #2E3944;
+                position: fixed;
+                z-index: 999;
+                bottom: 0;
+                background: #cad0d3;
+                width: 50%;
+                padding-left: 1em;
+                padding-bottom: 1em;
+                border: 0.5em solid #2E3944;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="header-container">
+            <header>
+                <h1>PRIORITIZE YOUR ONLINE PRIVACY</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="text-body">
+            <h2>What is Online Privacy?</h2>
+
+            <p>
+                Online privacy, a major concern for many, refers to the ability to control
+                what information you share online and who can access it. This includes personal
+                details such as your name, address, phone number, and email address, as well as
+                data like your browsing history, search queries, and social media activity. With
+                the rise of social media and the internet, it's easier than ever for our online activity
+                to be seen, leading to potential privacy loss, security risks, and even identity theft.
+            </p>
+
+            <p>
+                There are many laws and regulations in place to protect online privacy, but
+                most of the laws are set for large corporations and not for individuals. This is
+                where large corporations can still make a profit off of your personal information.
+                Companies can track your online activity and collect data about your online behavior
+                through their websites, apps, and other online services. With this they can sell your
+                information to other companies, use it for targeted advertising, and gain more revenue.
+                All through their customer's personal information.
+            </p>
+
+            <p>
+                <strong><u>You are entitled to your privacy rights, and it is withing your rights to exercise and protect them.</u></strong>
+            </p>
+
+            <p>
+                For additional information on internet laws, online privacy regulations, data collection policies,
+                and more, visit our in-depth <a href="information.html">Information</a> page.
+            </p>
+
+            <h2>Why is Online Privacy Important?</h2>
+            <p>
+                Online privacy is absolutely crucial for many reasons. Primarily,
+                everyone is entitled to their right to privacy, and this extends to the digital world.
+                Millions of people's information is sold to massive data brokers every day, and this is
+                through many of the websites and apps that we use.
+            </p>
+            <p>
+                A large number of companies that have access to your information, subsequently selling
+                it to others, increases the risk of data leaks. In some instances, your personal data
+                might be compromised due to a breach in a company's security, a company you might not
+                even be aware has your information. Just like that. Your personal data is on the dark web.
+            </p>
+
+            <p>
+                It is not just about controlling what information you share online, but it's also
+                about protecting your personal information, your identity, and your security from
+                potential threats in the digital world. It's a fundamental aspect of your digital
+                life that helps maintain your integrity and safety in a rapidly evolving digital
+                world where technological advancements nearly quadruple each year.
+            </p>
+        </div>
+
+        <div class="footer">
+            <footer>
+                &copy; 2024 Trevor M Danielewski - All Rights Reserved
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="doNotSellInformation.html">Do Not Sell My Personal Information</a></li>
+                        <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+
+        <div id="cookieTest">
+            <h2><strong>We "Value" Your Privacy</strong></h2>
+            <p>We use cookies to personalize content and ads, provide social media features, and analyze our traffic.
+                By clicking "Accept All", you consent to the use of ALL the cookies. To find out more, read our <a href="privacyPolicy.html">privacy policy</a>.
+            </p>
+            <button id="acceptAll">Accept All</button>
+            <button id="rejectAll">Reject All</button>
+            <button id="acceptNecessary">Accept Necessary</button>
+        </div>
+    </body>
+</html>

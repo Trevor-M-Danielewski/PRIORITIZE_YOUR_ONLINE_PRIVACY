@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do Not Sell My Personal Information</title>
+    <link rel="stylesheet" type="text/css" href="template.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#more").click(function () {
+                $("#extraInfo").fadeToggle();
+            });
+        });
+    </script>
+
+    <style>
+        #gender {
+            width: 25.5em; /* Just So it looks nice*/
+        }
+
+        .text-body {
+            background-color: #e0e0e0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 0.5em
+        }
+
+        form #extraInfo{
+            display: none;
+            flex-direction: column;
+            width: auto;
+            gap: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <h1>PRIORITIZE YOUR ONLINE PRIVACY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="text-body">
+        <h2>Do Not Sell My Personal Information</h2>
+        <p>
+            We "respect" your privacy rights and provide you with reasonable access to the personal data
+            that you may have provided through your use of our Services. If you wish to access or amend any
+            other personal data we hold about you, or to request that we delete or transfer any information
+            about you that we have obtained, you may contact us as set forth in the contact section.
+            At your request, we will have any reference to you deleted or blocked in our database.
+        </p>
+        <p>
+            You may decline to share certain personal data with us, in which case we may not be able to
+            provide to you some of the features and functionality of the Service. At any time, you may
+            object to the processing of your Personal Data, on legitimate grounds, except if otherwise
+            permitted by applicable law. If you believe your right to privacy granted by applicable data
+            protection laws has been infringed upon, please visit our contact page.
+        </p>
+        <p>For more details on how we use your data and information, please refer to our <a href="privacyPolicy.html">privacy policy</a>.</p>
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" tabindex="1" required><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="cis-male">Cis-Male</option>
+                <option value="cis-female">Cis-Female</option>
+                <option value="non-binary">Non-Binary</option>
+                <option value="other">Other</option>
+                <option value="no-comment">Prefer Not To Say</option>
+            </select>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" tabindex="2" required><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" tabindex="3" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" tabindex="4" required><br>
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" tabindex="5" required><br>
+            <label for="state">State:</label><br>
+            <input type="text" id="state" name="state" tabindex="6" required><br>
+            <label for="zip">Zip Code:</label><br>
+            <input type="text" id="zip" name="zip" tabindex="7" required><br>
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" tabindex="8" required><br>
+            <a href="#" id="more"> More </a> <br><br>
+            <div id="extraInfo">
+                <label for="ssn">Social Security Number:</label><br>
+                <input type="text" id="ssn" name="ssn" tabindex="9" required><br>
+                <label for="motherMaidenName">What is your mother's maiden name?</label><br>
+                <input type="text" id="motherMaidenName" name="motherMaidenName" tabindex="10" required><br>
+                <label for="firstPet">What was the name of your first pet?</label><br>
+                <input type="text" id="firstPet" name="firstPet" tabindex="11" required><br>
+                <label for="firstCar">What was the make and model of your first car?</label><br>
+                <input type="text" id="firstCar" name="firstCar" tabindex="12" required><br>
+                <label for="birthCity">In what city were you born?</label><br>
+                <input type="text" id="birthCity" name="birthCity" tabindex="13" required><br>
+                <label for="firstJobTown">What is the name of the town where you had your first job?</label><br>
+                <input type="text" id="firstJobTown" name="firstJobTown" tabindex="14" required><br>
+                <label for="elementarySchool">What was the name of your elementary school?</label><br>
+                <input type="text" id="elementarySchool" name="elementarySchool" tabindex="15" required><br>
+                <label for="fatherMiddleName">What is your father's middle name?</label><br>
+                <input type="text" id="fatherMiddleName" name="fatherMiddleName" tabindex="16" required><br>
+                <label for="highSchoolMascot">What was your high school mascot?</label><br>
+                <input type="text" id="highSchoolMascot" name="highSchoolMascot" tabindex="17" required><br>
+                <label for="favoriteColor">What is your favorite color?</label><br>
+                <input type="text" id="favoriteColor" name="favoriteColor" tabindex="18" required><br>
+                <label for="favoriteMovie">What is your favorite movie?</label><br>
+                <input type="text" id="favoriteMovie" name="favoriteMovie" tabindex="19" required><br>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>
+            &copy; 2024 Trevor M Danielewski - All Rights Reserved
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="doNotSellInformation.html">Do Not Sell My Personal Information</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
